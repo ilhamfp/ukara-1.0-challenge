@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+STIMULUS
+---------------------------------------------------------------------------------------------------------------------------------------------
+Sebuah toko baju berkonsep self-service menawarkan promosi dua buah baju bertema tahun baru seharga Rp50.000,00. sebelum baju bertema tahun baru dibagikan kepada pembeli, sebuah layar akan menampilkan tampilan gambar yang menampilkan kondisi kerja di dalam sebuah pabrik konveksi/pembuatan baju. Kemudian pembeli diberi program pilihan untuk menyelesaikan pembeliannya atau menyumpangkan Rp50.000,00 untuk dijadikan donasi pembagian baju musim dingin di suatu daerah yang membutuhkan. Delapan dari sepuluh pembeli memilih untuk memberikan donasi.
+Menurut anda mengapa banyak dari pembeli yang memilih berdonasi?
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+CODING GUIDELINES
+---------------------------------------------------------------------------------------------------------------------------------------------
+Label 1: Siswa memberikan jawaban yang menjelaskan alasan untuk melakukan donasi yang merujuk pada kesadaran akan kondisi kerja di industri pakaian atau bagaimana tindakan konsumen mempengaruhi orang lain ATAU siswa menjelaskan alasan untuk melakukan donasi yang berfokus pada emosi atau motivasi dari donor saja.
+
+Label 0: Siswa memberikan jawaban yang salah, tidak jelas, tidak cukup atau tidak relevan.
