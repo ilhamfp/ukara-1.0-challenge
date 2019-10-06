@@ -1,2 +1,4 @@
 data_misc/
 data/submission/
+.ipynb_checkpoints/*
+.ipynb_checkpoints
