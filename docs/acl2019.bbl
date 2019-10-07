@@ -1,0 +1,22 @@
+\begin{thebibliography}{3}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Gusfield(1997)}]{Gusfield:97}
+Dan Gusfield. 1997.
+\newblock \emph{Algorithms on Strings, Trees and Sequences}.
+\newblock Cambridge University Press, Cambridge, UK.
+
+\bibitem[{Lison and Tiedemann(2016)}]{opensubs}
+P.~Lison and J.~Tiedemann. 2016.
+\newblock {OpenSubtitles2016: Extracting Large Parallel Corpora from Movie and
+  TV Subtitles}.
+\newblock In \emph{{Proceedings of the 10th International Conference on
+  Language Resources and Evaluation (LREC 2016)}}.
+
+\bibitem[{{\v R}eh{\r u}{\v r}ek and Sojka(2010)}]{rehurek_lrec}
+Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka. 2010.
+\newblock {Software Framework for Topic Modelling with Large Corpora}.
+\newblock In \emph{{Proceedings of the LREC 2010 Workshop on New Challenges for
+  NLP Frameworks}}, pages 45--50, Valletta, Malta. ELRA.
+
+\end{thebibliography}
