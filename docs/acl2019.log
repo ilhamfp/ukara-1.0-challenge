@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.23)  7 OCT 2019 21:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.23)  8 OCT 2019 00:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -300,67 +300,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--46
 [][][][][]$\OT1/pcr/m/n/9 https : / / github . com / ilhamfp / ukara-[]1 .
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 
-Underfull \hbox (badness 1584) in paragraph at lines 63--64
-\OT1/ptm/m/n/10.95 Gen-sim ([][][]Reh[]u[]rek and So-jka[][], [][]2010[][]) dan
- data
+Underfull \hbox (badness 1881) in paragraph at lines 46--47
+\OT1/ptm/m/n/10 1.0 Chal-lenge is an In-done-sian au-to-matic
  []
 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 76.
+
+Underfull \hbox (badness 3417) in paragraph at lines 76--77
+\OT1/ptm/m/n/10.95 100 di-men-sion word em-bed-ding us-ing Gen-
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+]
+Underfull \vbox (badness 1337) has occurred while \output is active []
+
+
 (./acl2019.bbl)
-Overfull \hbox (17.66331pt too wide) in paragraph at lines 81--82
+Overfull \hbox (17.66331pt too wide) in paragraph at lines 135--136
 \OT1/ptm/m/n/10.95 We use [][]\OT1/pcr/m/n/10.95 gensim.models.word2vec.Word2Ve
 c
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 88.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+[2]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 142.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 88.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
- [2
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
+ [3
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
- (./acl2019.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
+
+(./acl2019.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
 Package rerunfilecheck Info: File `acl2019.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
  )
 (\end occurred when \iffalse on line 353 was incomplete) 
 Here is how much of TeX's memory you used:
- 7072 strings out of 494923
- 104926 string characters out of 6180742
- 193587 words of memory out of 5000000
- 10317 multiletter control sequences out of 15000+600000
- 26184 words of font info for 62 fonts, out of 8000000 for 9000
+ 7109 strings out of 494923
+ 105383 string characters out of 6180742
+ 199587 words of memory out of 5000000
+ 10340 multiletter control sequences out of 15000+600000
+ 31453 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,10n,40p,1010b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1010b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/tex
 mf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/co
 urier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on acl2019.pdf (2 pages, 67692 bytes).
+Output written on acl2019.pdf (3 pages, 75870 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 101 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 28 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

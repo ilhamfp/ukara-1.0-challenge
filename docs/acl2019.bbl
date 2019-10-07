@@ -1,10 +1,34 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{6}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[{Gusfield(1997)}]{Gusfield:97}
-Dan Gusfield. 1997.
-\newblock \emph{Algorithms on Strings, Trees and Sequences}.
-\newblock Cambridge University Press, Cambridge, UK.
+\bibitem[{Abadi et~al.(2015)Abadi, Agarwal, Barham, Brevdo, Chen, Citro,
+  Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia,
+  Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah,
+  Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan,
+  Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and Zheng}]{Tensorflow}
+Mart\'{\i}n Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen,
+  Craig Citro, Greg~S. Corrado, Andy Davis, Jeffrey Dean, Matthieu Devin,
+  Sanjay Ghemawat, Ian Goodfellow, Andrew Harp, Geoffrey Irving, Michael Isard,
+  Yangqing Jia, Rafal Jozefowicz, Lukasz Kaiser, Manjunath Kudlur, Josh
+  Levenberg, Dandelion Man\'{e}, Rajat Monga, Sherry Moore, Derek Murray, Chris
+  Olah, Mike Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal
+  Talwar, Paul Tucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Vi\'{e}gas,
+  Oriol Vinyals, Pete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and
+  Xiaoqiang Zheng. 2015.
+\newblock \href {https://www.tensorflow.org/} {{TensorFlow}: Large-scale
+  machine learning on heterogeneous systems}.
+\newblock Software available from tensorflow.org.
+
+\bibitem[{Chollet et~al.(2015)}]{Keras}
+Fran\c{c}ois Chollet et~al. 2015.
+\newblock Keras.
+\newblock \url{https://keras.io}.
+
+\bibitem[{Hochreiter and Schmidhuber(1997)}]{LSTM}
+Sepp Hochreiter and J\"{u}rgen Schmidhuber. 1997.
+\newblock \href {https://doi.org/10.1162/neco.1997.9.8.1735} {Long short-term
+  memory}.
+\newblock \emph{Neural Comput.}, 9(8):1735--1780.
 
 \bibitem[{Lison and Tiedemann(2016)}]{opensubs}
 P.~Lison and J.~Tiedemann. 2016.
@@ -12,6 +36,11 @@ P.~Lison and J.~Tiedemann. 2016.
   TV Subtitles}.
 \newblock In \emph{{Proceedings of the 10th International Conference on
   Language Resources and Evaluation (LREC 2016)}}.
+
+\bibitem[{Mikolov et~al.(2013)Mikolov, Chen, Corrado, and Dean}]{Word2vec}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013.
+\newblock \href {http://arxiv.org/abs/arXiv:1301.3781} {Efficient estimation of
+  word representations in vector space}.
 
 \bibitem[{{\v R}eh{\r u}{\v r}ek and Sojka(2010)}]{rehurek_lrec}
 Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka. 2010.
