@@ -48,16 +48,17 @@
 
 \section{Introduction}
 
-Automatic essay scoring as one of the topics in natural language processing has been greatly developed by the demand to make assessment process faster.Despite the fast advancement on automatic essay scoring, research in this area for Bahasa Indonesia has been very limited and only recently emerged as a topic. The use of informal language and the diversity of local languages was the main challenge in developing automatic essay scoring for Bahasa Indonesia.
+Automatic essay scoring as one of the topics in natural language processing has been greatly developed by the demand to make the assessment process faster. Despite the fast advancement in automatic essay scoring, research in this area for Bahasa Indonesia has been very limited and only recently emerged as a topic. The use of informal language and the diversity of local languages was the main challenge in developing automatic essay scoring for Bahasa Indonesia.
 
-UKARA 1.0 Challenge aims to encourage more ideas and studies for developing automatic short-answer scoring specifically for Bahasa Indonesia. In this challenge, participants will be given an access to datasets in the form of students short-answers in two phase. In the first phase, the participant developed their solution with the development set for 43 days from July 29 - September 10, 2019. Finally, the participant can submit their final solution on the second phase with the test set for 3 days from September 16 - September 19, 2019.
+UKARA 1.0 Challenge aims to encourage more ideas and studies for developing automatic short-answer scoring specifically for Bahasa Indonesia. In this challenge, participants will be given access to datasets in the form of students short-answers in two phase. In the first phase, the participant developed their solution with the development set for 43 days from July 29 - September 10, 2019. Finally, the participant can submit their final solution on the second phase with the test set for 3 days from September 16 - September 19, 2019.
 
 \section{Indonesian Essay Scoring}
 
-In this solution, we cast the challenge as a binary classification problem. Given a short-answer to the stimulus, we build a model that try to predict whether the answer was relevant to the stimulus or not. We process the inputs as a sequence of word. Each word represented as a low dimensional vector and processed sequentially by bidirectional LSTM~\cite{LSTM}.
+In this solution, we cast the challenge as a binary classification problem. Given a short-answer to the stimulus, we build a model that tries to predict whether the answer was relevant to the stimulus or not. We process the inputs as a sequence of word. Each word represented as a low dimensional vector and processed sequentially by bidirectional LSTM~\cite{LSTM}.
 
 \subsection{Dataset}
-The dataset is a short-answer from 2 different stimulus (For the size detail, see Table 1). The short-answer and stimulus consist of a total 36,930 word with 2,816 unique vocabulary. The label for each short-answer was a binary with 1 representing relevant answer and 0 representing non-relevant answer. The only text preprocessing done was converting character to lowercase and removing non-alphanumeric character.
+
+The dataset is a short-answer from 2 different stimuli (For the size detail, see Table 1). The short-answer and stimulus consist of a total 36,930 word with 2,816 unique vocabularies. The label for each short-answer was a binary with 1 representing relevant answer and 0 representing non-relevant answer. The only text preprocessing done was converting character to lowercase and removing non-alphanumeric character.
 
 \begin{table}
 \centering
@@ -73,7 +74,8 @@ The dataset is a short-answer from 2 different stimulus (For the size detail, se
 \end{table}
 
 \subsection{Word Embedding}
-We pretrained Word2vec~\cite{Word2vec} 100 dimension word embedding using Gensim~\cite{rehurek_lrec} on Indonesian text from Wikipedia dump\footnote{\url{https://dumps.wikimedia.org}}, Opensubs~\cite{opensubs}, and the UKARA dataset itself (For the word count detail, see Table 2). The addition of text from Opensubs and UKARA dataset helps providing informal words that usually absent in Wikipedia article. With this dataset, we ended up with a total of 420,024 unique vocabulary.
+
+We pretrained Word2vec~\cite{Word2vec} 100 dimension word embedding using Gensim~\cite{rehurek_lrec} on Indonesian text from Wikipedia dump\footnote{\url{https://dumps.wikimedia.org}}, Opensubs~\cite{opensubs}, and the preprocessed UKARA dataset (For the word count detail, see Table 2). The addition of text from Opensubs and UKARA dataset helps in providing informal words that usually absent in Wikipedia article. With this dataset, we ended up with a total of 420,024 unique vocabularies.
 
 \begin{table}
 \centering
@@ -90,7 +92,8 @@ We pretrained Word2vec~\cite{Word2vec} 100 dimension word embedding using Gensim
 \end{table}
 
 \subsection{Model}
-We use Keras~\cite{Keras} with Tensorflow~\cite{Tensorflow} as the backend to build the model. The text was tokenized and padded into maximum length of 43 (90th percentile of all short-answer length) before feeded into the model. In order to build the embedding layer, we perform a multi-stage text processing using PySastrawi\footnote{\url{https://github.com/har07/PySastrawi}} stemmer and a normalizer function (Removing duplicate character) to minimize the amount of unknown vocabulary (For the count of known word in each stage detail, see Table 3). This multi-stage process yield a total of 2.426 known vocabulary and 390 unknown vocabulary. We finally fit the model with an EarlyStopping and ReduceLROnPlateau callback.
+
+We use Keras~\cite{Keras} with Tensorflow~\cite{Tensorflow} as the backend to build the model. The text was tokenized and padded into maximum length of 43 (90th percentile of all short-answer length) before goes into the model. In order to build the embedding layer, we perform a multi-stage text processing using PySastrawi\footnote{\url{https://github.com/har07/PySastrawi}} stemmer and a normalizer function (removing duplicate adjacent character) to minimize the amount of unknown vocabulary (For the count of known word found in each stage, see Table 3). This multi-stage process yields a total of 2.426 known vocabularies and 390 unknown vocabularies. We finally fit the model with an EarlyStopping and ReduceLROnPlateau callback.
 
 \begin{table}
 \centering
@@ -120,10 +123,12 @@ We use Keras~\cite{Keras} with Tensorflow~\cite{Tensorflow} as the backend to bu
 \end{table}
 
 \subsection{Experiment}
-We run the experiment on RepeatedStratifiedKFold with 10 split and 10 repeat. For each split and repeat, we perform prediction to the validation and test set. We later normalize the result according to how many prediction made, essentially performing ensemble from 100 different model fit. We choose threshold of 0.5 for Data A and 0.48 for Data B in predicting the label. See Table 4 for the result.
+
+We run the experiment on RepeatedStratifiedKFold with 10 split and 10 repeats. For each split and repeat, we perform prediction to the validation and test set. We later normalize the result according to how many predictions made, essentially performing ensemble of 100 different model fit. We choose a threshold of 0.5 for Data A and 0.48 for Data B in predicting the label. See Table 4 for the result.
 
 \section{Conclusion}
-In this work, we present the effectiveness of Bi-LSTM and pretrained Word2vec in Indonesian essay scoring problem. In addition to that, we look at how the addition of Opensubs data helps in providing informal words that usually absent in Wikipedia article. We also look at how to maximize the amount of known word in building word embedding layer by performing multi-stage text processing.
+
+In this work, we present the effectiveness of Bi-LSTM and pretrained Word2vec in Indonesian essay scoring problem. In addition to that, the inclusion of Opensubs data helps in providing informal words that usually absent in Wikipedia article. Finally, we maximize the amount of known word in building word embedding layer by performing multi-stage text processing.
 
 \bibliography{acl2019}
 \bibliographystyle{acl_natbib}
