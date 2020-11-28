@@ -1,4 +1,4 @@
-# Knowing Right from Wrong - Should We Use More Complex Models for Automatic Short-Answer Scoring in Bahasa Indonesia?
+# [Knowing Right from Wrong - Should We Use More Complex Models for Automatic Short-Answer Scoring in Bahasa Indonesia?](https://www.aclweb.org/anthology/2020.sustainlp-1.1)
 Authors: [Ali Akbar Septiandri](https://twitter.com/aliakbars), [Yosef Ardhito Winatmoko](https://twitter.com/yoseflaw), [Ilham Firdausi Putra](https://www.linkedin.com/in/ilhamfp/)
 
 **Appeared in [SustaiNLP](https://sites.google.com/view/sustainlp2020) workshop at [EMNLP 2020](https://2020.emnlp.org/)**
